@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: digger run
-        uses: diggerhq/digger@fix/terragrunt-version
+        uses: diggerhq/digger@v0.4.3
         with:
           setup-aws: true
           setup-terragrunt: true
@@ -31,9 +31,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
           disable-locking: true
-          digger-hostname: 'https://cloud.digger.dev'
-          digger-organisation: 'digger-playground'
-          digger-token: ${{ secrets.DIGGER_TOKEN }}
+          digger-hostname: 'https://7f2c-85-255-232-244.ngrok-free.app'
+          digger-organisation: 'digger'
+          digger-token: 'abc123'
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
