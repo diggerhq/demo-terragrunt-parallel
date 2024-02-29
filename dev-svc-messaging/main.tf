@@ -1,4 +1,4 @@
 resource "aws_s3_bucket" "example" {
-  bucket = "demo-terragrunt-parallel-app-d"
+  bucket = "demo-terragrunt-parallel-svc-messaging-dev"
 }
 
